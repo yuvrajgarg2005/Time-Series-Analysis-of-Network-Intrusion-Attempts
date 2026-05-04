@@ -1,0 +1,7 @@
+Model,Phase,Dataset,Precision,Recall,F1,AUC,RMSE,Notes
+"ARIMA (1,1,1)",2,Sample TON_IoT,-,-,-,-,"22,214.00",Forecasting only
+Holt-Winters,2,Sample TON_IoT,-,-,-,-,N/A,Simple ES fallback
+Random Forest,2,Sample TON_IoT,99.40%,99.78%,99.59%,0.9999,-,Classifier
+Prophet,3,NF-ToN-IoT-v3,-,-,-,-,"449,144.17","Daily series had only 7 observations, so Prophet was fitted on hourly attack counts to preserve enough temporal signal."
+LSTM,3,NF-ToN-IoT-v3,83.58%,97.69%,90.09%,0.8656,-,"Sequence classifier trained on 200,000 time-ordered sampled flows."
+XGBoost+SHAP,3,NF-ToN-IoT-v3,95.13%,91.69%,93.38%,0.9861,-,Best explainability

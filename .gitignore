@@ -1,0 +1,16 @@
+.venv310/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large local datasets and samples
+data/raw/NF-ToN-IoT-v3.csv
+data/processed/nf_ton_iot_v3_cleaned_sample.csv
+
+# Runtime logs
+outputs/logs/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

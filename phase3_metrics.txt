@@ -1,0 +1,26 @@
+Phase 3 Metrics and Notes
+================================================================================
+
+Dataset shape              : 27,520,260 rows x 55 columns
+Date range                 : 2019-04-23 14:09:50.618000 to 2019-04-29 14:45:55.861000
+Sorted by FLOW_START       : True
+Null columns with values   : 0
+Duplicate rows in sample   : 0
+
+Prophet
+RMSE      : 449144.17
+MAE       : 439727.69
+Note      : Daily series had only 7 observations, so Prophet was fitted on hourly attack counts to preserve enough temporal signal.
+Changepoints: 2019-04-23, 2019-04-24, 2019-04-25, 2019-04-26, 2019-04-27, 2019-04-28
+LSTM
+Precision : 83.58%
+Recall    : 97.69%
+F1-Score  : 90.09%
+AUC-ROC   : 0.8656
+Note      : Sequence classifier trained on 200,000 time-ordered sampled flows.
+XGBoost + SHAP
+Precision : 95.13%
+Recall    : 91.69%
+F1-Score  : 93.38%
+AUC-ROC   : 0.9861
+Note      : Trained on 495,090 sampled flows with scale_pos_weight=1.5401.
