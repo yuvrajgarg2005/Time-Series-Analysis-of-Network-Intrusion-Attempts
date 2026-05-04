@@ -47,8 +47,6 @@ The following files are intentionally **not committed** because they are too lar
 - `data/raw/NF-ToN-IoT-v3.csv`
 - `data/processed/nf_ton_iot_v3_cleaned_sample.csv`
 
-Keep them on your local machine for execution and demo.
-
 ## Key Outputs
 - Plots: `outputs/plots/`
 - Saved LSTM model: `outputs/models/lstm_model.h5`
